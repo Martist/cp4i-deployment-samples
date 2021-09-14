@@ -1,0 +1,9 @@
+{
+  "QuoteID": 1,
+  "Name": "James Smith",
+  "EMail": "jsmith@example.com",
+  "Address": "123 Corner Street",
+  "USState": "FL",
+  "LicensePlate": "MMM863",
+  "Versions": "1,1,1"
+}
