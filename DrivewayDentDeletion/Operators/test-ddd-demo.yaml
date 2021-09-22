@@ -1,0 +1,39 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: Demo
+metadata:
+  name: demo-setup
+  namespace: cp4i
+spec:
+  addons:
+    elasticSearch: true
+    ocpPipelines: true
+    postgres: true
+  demos:
+    cognitiveCarRepair: false
+    drivewayDentDeletion: true
+    eventEnabledInsurance: false
+    mappingAssist: false
+    weatherChatbot: false
+  general:
+    storage:
+      block:
+        class: tec-nfs
+      file:
+        class: tec-nfs
+  license:
+    accept: true
+    ace: L-APEH-BPUCJK
+    demo: L-RJON-BYRMYW
+    apic: L-RJON-BRSHKF
+    ar: L-NCAN-BXWG76
+    mq: L-RJON-BXUPZ2
+    tracing: L-RJON-BXUPZ2
+  products:
+    aceDashboard: true
+    aceDesigner: true
+    apic: false
+    assetRepo: false
+    eventStreams: true
+    mq: true
+    tracing: true
+  version: 2021.1.1
