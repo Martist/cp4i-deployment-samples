@@ -24,9 +24,9 @@
 #     ./release-ace-designer.sh -n cp4i-prod -r prod
 
 designer_release_name="ace-designer-demo"
-namespace="cp4i"
-storage="ibmc-block-gold"
-file_storage="ibmc-file-gold-gid"
+namespace="cp4i-ddd"
+storage="tec-nfs"
+file_storage="tec-nfs"
 CURRENT_DIR=$(dirname $0)
 
 function usage() {
@@ -91,14 +91,12 @@ spec:
   designerMappingAssist:
     enabled: true
     incrementalLearning:
-      useIncrementalLearning: true
-      storage:
-        class: ${file_storage}
+      useIncrementalLearning: false
   license:
     accept: true
-    license: $(getACELicense $namespace)
+    license: L-APEH-C49KZH
     use: CloudPakForIntegrationNonProduction
   replicas: 1
   useCommonServices: true
-  version: '12.0.1.0-r1'
+  version: '12.0.1.0-r4'
 EOF

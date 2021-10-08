@@ -443,7 +443,6 @@ for DEMO in $(echo $REQUIRED_DEMOS_JSON | jq -r 'keys[]'); do
   drivewayDentDeletion)
     PRODUCTS_FOR_DEMO='
       aceDashboard
-      apic
       tracing
       '
 

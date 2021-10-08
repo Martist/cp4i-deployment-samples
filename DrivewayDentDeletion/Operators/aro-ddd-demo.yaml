@@ -2,7 +2,7 @@ apiVersion: integration.ibm.com/v1beta1
 kind: Demo
 metadata:
   name: demo-setup
-  namespace: cp4i-ddd
+  namespace: cp4i
 spec:
   addons:
     elasticSearch: false
@@ -17,17 +17,17 @@ spec:
   general:
     storage:
       block:
-        class: tec-nfs
+        class: ocs-storagecluster-ceph-rbd
       file:
-        class: tec-nfs
+        class: ocs-storagecluster-cephfs
   license:
     accept: true
-    ace: L-APEH-BPUCJK
+    ace: L-APEH-C49KZH
     demo: L-RJON-BYRMYW
     apic: L-RJON-BRSHKF
     ar: L-NCAN-BXWG76
-    mq: L-RJON-BXUPZ2
-    tracing: L-RJON-BXUPZ2
+    mq: L-RJON-BQPGWD
+    tracing: L-RJON-BQPGWD
   products:
     aceDashboard: true
     aceDesigner: true
@@ -36,4 +36,4 @@ spec:
     eventStreams: false
     mq: true
     tracing: true
-  version: 2021.1.1
+  version: 2021.3.1

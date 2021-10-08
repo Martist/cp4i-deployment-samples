@@ -25,9 +25,9 @@
 
 
 dashboard_release_name="ace-dashboard-demo"
-namespace="cp4i"
+namespace="cp4i-ddd"
 production="false"
-storage="ibmc-file-gold-gid"
+storage="tec-nfs"
 CURRENT_DIR=$(dirname $0)
 
 function usage() {
@@ -92,7 +92,7 @@ metadata:
 spec:
   license:
     accept: true
-    license: $(getACELicense $namespace)
+    license: L-APEH-C49KZH
     use: ${use}
   pod:
     containers:
@@ -118,5 +118,5 @@ spec:
     size: 5Gi
     type: persistent-claim
   useCommonServices: true
-  version: '12.0.1.0-r1'
+  version: '12.0.1.0-r4'
 EOF
