@@ -57,7 +57,9 @@ These steps will need to be documented in the demo docs:
   > As part of this pipeline we create a sample consumer org whose owner's credential details can be found in the secret `ddd-dev-api-endpoint-client-id` for dev environment and in `ddd-test-api-endpoint-client-id` for the test environment.
   >
   > Should the user wish to receive the portal admin login reset link they can run 1-click with a set of valid mailtrap credentials and obtain the link from mailtrap.
-[ImageStreams tags available for PostgreSQL in OCP 4.8](./img/results-pipeline.png)
+
+
+![ImageStreams tags available for PostgreSQL in OCP 4.8](./img/results-pipeline.png)
 
 # Pipelines
 ## Initial pipeline for just the dev environment
