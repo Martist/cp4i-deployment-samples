@@ -59,7 +59,7 @@ These steps will need to be documented in the demo docs:
   > Should the user wish to receive the portal admin login reset link they can run 1-click with a set of valid mailtrap credentials and obtain the link from mailtrap.
 
 
-[ImageStreams tags available for PostgreSQL in OCP 4.8](./test-dir/results-pipeline.png)
+[ImageStreams tags available for PostgreSQL in OCP 4.8](./test_dir/results-pipeline.png)
 
 # Pipelines
 ## Initial pipeline for just the dev environment
